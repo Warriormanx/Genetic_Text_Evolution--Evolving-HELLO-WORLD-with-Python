@@ -17,20 +17,20 @@
 
 
 ## 🚀 How It Works
-1. Initial Population
-Generates a random population of strings the same length as the target.
+```mermaid
+graph TD
+    A[Start Program] --> B[Initialize Parameters]
+    B --> C[Generate Initial Population]
+    C --> D[Calculate Fitness]
+    D --> E{Target Found or Max Gen?}
+    E -- Yes --> F[Show Final Result]
+    E -- No --> G[Select Parents]
+    G --> H[Crossover]
+    H --> I[Mutation]
+    I --> J[New Generation]
+    J --> D
 
-2. Fitness Function
-Scores each string based on how many characters match the target string.
-
-3. Selection
-Selects the fittest individuals as parents for the next generation.
-
-4. Crossover & Mutation
-Combines and mutates the parents to create a new generation.
-
-5. Repeat
-This process continues until the target phrase is evolved or the maximum generation limit is reached.
+```
 
 ## ⚙️ Requirements
 - Python 3.7+
